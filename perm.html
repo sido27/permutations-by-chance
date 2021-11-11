@@ -1,0 +1,44 @@
+function smth(string) {
+      let z = "";
+      let arr = [];
+      let s = 0;
+      while (s < 50) {
+        const x = Math.floor(Math.random() * string.length);
+
+        if (arr.indexOf(x) == -1) {
+          arr.push(x);
+          z += string[x];
+        }
+
+        s++;
+      }
+
+      return z;
+    }
+
+    function smth2(str) {
+      let arr2 = [];
+      let arr3 = [];
+      for (i = 0; i < 99999; i++) {
+        let word = smth(str);
+        // console.log(smth("ABC"));
+
+        if (arr2.indexOf(word) == -1) {
+          arr2.push(word);
+        }
+        if (arr2.length == factorial(str.length)) {
+          arr3.push(arr2);
+          return arr3;
+          break;
+        }
+      }
+    }
+
+    function factorial(n) {
+      if (n == 0 || n == 1) {
+        return 1;
+      }
+      return factorial(n - 1) * n;
+    }
+
+    console.log(smth2("ABCDEF"));
