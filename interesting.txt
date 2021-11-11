@@ -1,3 +1,6 @@
-     return /^[A-Z]/.test(str) && /\d+/.test(str) && /[^$].{6,}/.test(str); // matches a string that starts with a Capital , have at least once number , and is 6 or more charcters
+     return /^[A-Z]/.test(str) && /\d+/.test(str) && /[^$].{6,}/.test(str); 
+     // matches a string that starts with a Capital , have at least once number , and is 6 or more charcters
 
      
+/^[a-zA-Z0-9]{6}$/.test(str)  
+// match EXACTLY 6 charchters from chosen range
