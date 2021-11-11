@@ -12,3 +12,9 @@
 ^[0-9]{9}$
 
 /validate a phone number
+
+
+
+^[^@]+@[^@.]{3,}.[a-zA-Z]{2,}
+
+//validate a correo
