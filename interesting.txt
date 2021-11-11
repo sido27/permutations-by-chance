@@ -4,3 +4,7 @@
      
 /^[a-zA-Z0-9]{6}$/.test(str)  
 // match EXACTLY 6 charchters from chosen range
+
+
+/^.{8}$/.test(str) 
+// match string with ANY CHARS which have EXACTLY 8 chars. 
